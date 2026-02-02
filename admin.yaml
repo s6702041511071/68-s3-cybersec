@@ -5,5 +5,7 @@ services:
     environment:
       PGADMIN_EMAIL: ${PGADMIN_EMAIL}
       PGADMIN_PASSWORD: ${PGADMIN_PASSWORD}
+    env_file:
+      - .env
     ports:
       - "2345:80"
