@@ -3,8 +3,8 @@ services:
     image: dpage/pgadmin4
     container_name: 68-s3-admin
     environment:
-      PGADMIN_EMAIL: ${PGADMIN_EMAIL}
-      PGADMIN_PASSWORD: ${PGADMIN_PASSWORD}
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
     env_file:
       - .env
     ports:
