@@ -1,0 +1,15 @@
+services:
+  s3app:
+    container_name: 68-s3-app
+    image: prawee/strapi
+    environment:
+      DATABASE_CLIENT: ${APP_DATABASE_CLIENT}
+      DATABASE_HOST: ${APP_DATABASE_HOST}
+      DATABASE_PORT: ${APP_DATABASE_PORT}
+      DATABASE_NAME: ${APP_DATABASE_NAME}
+      DATABASE_USERNAME: ${APP_DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${APP_DATABASE_PASSWORD}
+    env_file:
+      - .env
+    ports:
+      - "5001:1337"
