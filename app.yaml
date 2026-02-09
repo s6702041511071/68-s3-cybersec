@@ -12,4 +12,4 @@ services:
     env_file:
       - .env
     ports:
-      - "${APP_DATABASE_PORT}:1337"
+      - "5001:1337"

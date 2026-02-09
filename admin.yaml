@@ -8,4 +8,4 @@ services:
     env_file:
       - .env
     ports:
-      - "${PGADMIN_PORT}:80"
+      - "2345:80"
